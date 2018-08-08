@@ -1,0 +1,99 @@
+{
+  "games": {
+
+    "ddr": {
+      "name": "DanceDanceRevolution",
+      "styles": [
+        "single",
+        "double"
+      ],
+      "versions": {
+        "2014": {
+          "builds": [
+            "2016021000"
+          ],
+          "current": "2016021000",
+          "difficulty": {
+            "list": [
+              "Beginner",
+              "Basic",
+              "Difficult",
+              "Expert",
+              "Challenge"
+            ],
+            "max": 4,
+            "min": 0
+          },
+          "level": {
+            "max": 19,
+            "min": 1
+          },
+          "na_option": false,
+          "name": "2014"
+        }
+      }
+    },
+    "groovecoaster": {
+      "name": "GROOVE COASTER",
+      "styles": [
+        "single"
+      ],
+      "versions": {
+        "3ex": {
+          "builds": [
+            "Ver3.59"
+          ],
+          "current": "Ver3.59",
+          "difficulty": {
+            "list": [
+              "Simple",
+              "Normal",
+              "Hard",
+              "Extra"
+            ],
+            "max": 4,
+            "min": 0
+          },
+          "level": {
+            "max": 10,
+            "min": 1
+          },
+          "na_option": false,
+          "name": "3EX: DREAM PARTY"
+        }
+      }
+    },
+    "iidx": {
+      "name": "beatmania IIDX",
+      "styles": [
+        "single",
+        "double"
+      ],
+      "versions": {
+        "24": {
+          "builds": [
+            "2017082800"
+          ],
+          "current": "2017082800",
+          "difficulty": {
+            "list": [
+              "Beginner",
+              "Normal",
+              "Hyper",
+              "Another",
+              "Black Another"
+            ],
+            "max": 4,
+            "min": 0
+          },
+          "level": {
+            "max": 12,
+            "min": 1
+          },
+          "na_option": false,
+          "name": "24 SINOBUZ"
+        }
+      }
+    }
+  }
+}

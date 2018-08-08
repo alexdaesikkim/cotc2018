@@ -1,0 +1,24 @@
+{
+  "name": "randomizer",
+  "version": "0.0.1",
+  "description": "serving random songs for tournament organizers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "cd front-end && npm install && npm run build"
+  },
+  "author": "Alex D Kim",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "create-react-app": "^1.4.3",
+    "express": "^4.16.2",
+    "iconv-lite": "^0.4.19",
+    "jconv": "^0.1.5",
+    "path": "^0.12.7",
+    "python-shell": "^0.4.0",
+    "request": "^2.83.0",
+    "xlsx": "^0.11.12"
+  }
+}
