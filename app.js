@@ -101,8 +101,8 @@ function grab_data_cache(game, version, build){
     try{
         var filename = "./games/" + game + "/" + version + "/" + build + ".json";
         console.log(filename)
-        song_obj = JSON.parse(fs.readFileSync(filename, 'utf8'));
-        console.log(song_obj)
+        if(game === 'djmax') song_obj = JSON.parse(fs.readFileSync(filename))
+        else song_obj = JSON.parse(fs.readFileSync(filename, 'utf8'));
     }
     catch(err){
       var obj = {
