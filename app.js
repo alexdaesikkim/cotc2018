@@ -95,6 +95,9 @@ function grab_data_cache(game, version, build){
       delete game_cache.songs[remove_key];
     }
     var node = game_cache.lfu_check.add(key);
+    console.log(game)
+    console.log(versoin)
+    console.log(build)
     try{
         var filename = "./games/" + game + "/" + version + "/" + build + ".json";
         song_obj = JSON.parse(fs.readFileSync(filename, 'utf8'));
