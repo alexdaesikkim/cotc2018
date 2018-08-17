@@ -102,6 +102,7 @@ function grab_data_cache(game, version, build){
         var filename = "./games/" + game + "/" + version + "/" + build + ".json";
         console.log(filename)
         song_obj = JSON.parse(fs.readFileSync(filename, 'utf8'));
+        console.log(song_obj)
     }
     catch(err){
       var obj = {
