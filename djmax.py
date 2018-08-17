@@ -42,6 +42,6 @@ final_data = {
     "songs": songs
 }
 #remember to change the datetime to the one from the page, not on the date it was update on the app's server
-with open('games/djmax/respect/' +  version_name + '.json', 'w') as file:
+with open('games/djmax/respect/' +  version_name + '.json', 'w', encoding='utf8') as file:
     json.dump(final_data, file, indent=2, sort_keys=True)
 print ("Finished")
