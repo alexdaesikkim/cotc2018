@@ -111,7 +111,7 @@ function grab_data_cache(game, version, build){
       }
       return obj;
     }
-
+    console.log("made through first error");
     var obj = {
       "node": node,
       "data": song_obj
