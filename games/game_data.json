@@ -70,11 +70,11 @@
         "all"
       ],
       "versions": {
-        "Respect": {
+        "respect": {
           "builds": [
-            "FINAL"
+            "final"
           ],
-          "current": "FINAL",
+          "current": "final",
           "difficulty": {
             "list": [
               "NM",
