@@ -581,7 +581,7 @@ var Song = createReactClass({
     if(this.props.game === 'ddr') classes = ['blue', 'yellow', 'red', 'green', 'purple']
     if(this.props.game === 'iidx') classes = ['green', 'blue', 'yellow', 'red', 'darkred']
     if(this.props.game === 'groovecoaster') classes = ['blue', 'yellow', 'red', 'gray']
-    if(this.props.game === 'djmax') classes = ['']
+    if(this.props.game === 'djmax') classes = ['blue', 'yellow', 'red']
     class_name += classes[difficulty]
     var object = {
       diff_string: diff_string,
@@ -630,14 +630,25 @@ var Song = createReactClass({
     var difficulty = this.props.game === 'danevo' ? "Level " : object.diff_string + " ";
     var style =  this.props.song.style.charAt(0).toUpperCase() + this.props.song.style.slice(1)+ " ";
     var card_class = this.props.song.active ? object.class_name : "Song-card card-out"
-    var level = (this.props.song.game === 'guitar' || this.props.song.game === 'drum') ? this.props.song.level/100.00 : this.props.song.level;
+    var level = this.props.song.level
     return (
       <div className={"Song-card " + card_class}>
         <h5>{this.props.song.name}</h5>
         <h6>{this.props.song.artist}</h6>
-        <h6>{style + difficulty} {this.props.song.level}</h6>
-        <h6>{this.props.song.genre}</h6>
-        <h6>{"BPM: " + this.props.song.bpm}</h6>
+        {this.props.game === 'djmax' ? (
+          <div>
+            <h6>{style}</h6>
+            <h6>{difficulty + this.props.song.level}</h6>
+            <h6>{this.props.song.genre}</h6>
+          </div>
+          ):(
+          <div>
+            <h6>{style + difficulty} {this.props.song.level}</h6>
+            <h6>{this.props.song.genre}</h6>
+            <h6>{"BPM: " + this.props.song.bpm}</h6>
+          </div>
+          )
+        }
         <h6>{this.props.song.version}</h6>
         <div>
           {this.card_ban()}

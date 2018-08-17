@@ -240,6 +240,13 @@ function filter_songs(array, style, d_min, d_max, l_min, l_max){
       return (data.style === style)
     })
   }
+
+  if(style === "4K, 5K, 6K"){
+    array = array.filter(function(data){
+      return(data.style !== "8K")
+    })
+  }
+
   return array;
 }
 
@@ -254,7 +261,7 @@ app.get('/api/alpha/random/:game/:version/', function(req, res, next){
   var min_level = req.query.min_level != null ? req.query.min_level : 0;
   var max_level = req.query.max_level != null ? req.query.max_level : 0;
   var build = req.query.build != null ? req.query.build : "latest";
-  var style = req.query.style != null ? req.query.style : "all";
+  var style = req.query.style != null ? req.query.style : "all"
   var north_america = req.query.north_america != null ? req.query.north_america : false;
   var game = req.params.game;
   var version = req.params.version

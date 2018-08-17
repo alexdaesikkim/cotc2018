@@ -63,6 +63,36 @@
         }
       }
     },
+    "djmax": {
+      "name" : "DJMAX Respect",
+      "styles": [
+        "4K, 5K, 6K",
+        "all"
+      ],
+      "versions": {
+        "Respect": {
+          "builds": [
+            "FINAL"
+          ],
+          "current": "FINAL",
+          "difficulty": {
+            "list": [
+              "NM",
+              "HD",
+              "MX"
+            ],
+            "max": 2,
+            "min": 0
+          },
+          "level": {
+            "max": 15,
+            "min": 1
+          },
+          "na_option": false,
+          "name": "RESPECT"
+        }
+      }
+    },
     "iidx": {
       "name": "beatmania IIDX",
       "styles": [
