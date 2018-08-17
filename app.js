@@ -96,7 +96,7 @@ function grab_data_cache(game, version, build){
     }
     var node = game_cache.lfu_check.add(key);
     console.log(game)
-    console.log(versoin)
+    console.log(version)
     console.log(build)
     try{
         var filename = "./games/" + game + "/" + version + "/" + build + ".json";
