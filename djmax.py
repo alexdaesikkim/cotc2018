@@ -32,7 +32,7 @@ for row in range(1, sheet.nrows):
                     "artist": artist,
                     "version": version,
                     "style": style,
-                    "difficulty": key_mode,
+                    "difficulty": diff,
                     "level": int(level)
                 }
                 songs.append(obj)
